@@ -19,7 +19,7 @@ public class ComputerMonitorController {
     @Autowired
     private ComputerMonitorRepository repository;
 
-    @GetMapping("/")
+    @GetMapping
     public List<ComputerMonitor> getAll() {
         return repository.findAll();
     }
