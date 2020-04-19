@@ -1,0 +1,24 @@
+spring:
+  profiles: "local"
+  application.name: "microservice-example"
+
+  data.mongodb.uri: "mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb"
+
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+
+#  instance:
+#    nonSecurePortEnabled: false
+#    securePortEnabled: true
+#    hostname: "localhost"
+#    statusPageUrl: 'https://${eureka.instance.hostname}:${server.port}/actuator/info'
+#    healthCheckUrl: 'https://${eureka.instance.hostname}:${server.port}/health'
+#    homePageUrl: 'https://${eureka.instance.hostname}:${server.port}/'
+
+---
+
+spring:
+  profiles: "custom"
