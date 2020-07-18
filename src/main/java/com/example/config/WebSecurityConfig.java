@@ -25,7 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity httpSecurity) throws Exception {
     // TODO remove dummy configuration
-    httpSecurity.anonymous();
+    httpSecurity.anonymous().and().csrf().disable();
   }
 
 
